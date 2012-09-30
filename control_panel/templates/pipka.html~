@@ -1,0 +1,4 @@
+		<h1>Pipka Application</h1>
+		<p>{{ a }}</p>
+		<p>{{ b }}</p>
+
