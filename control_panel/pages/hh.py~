@@ -1,4 +1,0 @@
-def p(request):
-	from django.shortcuts import render
-	pizda = { 'a':'one', 'b':'two' }
-	return render(request, 'pipka.html', pizda)
