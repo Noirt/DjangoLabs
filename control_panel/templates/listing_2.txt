@@ -4,14 +4,13 @@
 	</head>
 	<body>
 		<h1>Листинг каталога {{ dir_name }}</h1>
-		<table>
-			{% for item in tbl_content %}
-				<tr>
-					{% for i in item %}
-						<td>{{ i }}</td>
-					{% endfor %}					
-				</tr>
+		<ul>
+			{% for item in dir %}
+			<li><a href="">{{ item }}</a></li>
 			{% endfor %}
-		</table>
+			{% for item in f %}
+			<li>{{ item }}</li>
+			{% endfor %}
+		</ul>
 	</body>
 </html>
