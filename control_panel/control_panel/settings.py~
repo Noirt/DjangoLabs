@@ -110,12 +110,21 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+<<<<<<< HEAD
+#    'django.contrib.auth',
+#    'django.contrib.contenttypes',
+#    'django.contrib.sessions',
+#    'django.contrib.sites',
+#    'django.contrib.messages',
+#    'django.contrib.staticfiles',
+=======
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+>>>>>>> 3ba1afd4915fb42435ab6566726cebe81aa71213
     'pages',
     'library',
     # Uncomment the next line to enable the admin:
