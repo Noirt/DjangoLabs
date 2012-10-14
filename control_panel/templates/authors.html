@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>Django Application</title>
+	</head>
+	<body>
+		<h1>Список авторов</h1>
+		<ul>
+			{% for item in authors %}
+				<li><a href="{{ item.get_absolute_url }}">{{item}}</a></li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>

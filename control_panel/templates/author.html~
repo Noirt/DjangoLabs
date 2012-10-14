@@ -1,0 +1,9 @@
+<html>
+	<head>
+		<title>Django Application</title>
+	</head>
+	<body>
+		<h1>письки</h1>
+		<p>Почта: какашки</p>
+	</body>
+</html>
