@@ -25,7 +25,6 @@ class PublisherAdmin(admin.ModelAdmin):
 	ordering  = ('title',)	
 	list_filter = ('country', 'city')
 	fieldsets = (
-		(None, {'fields': ('title', 'website')}),
 		('Contact information', {'classes': ('collapse',),'fields': ('country', 'city','address'),}),
 	    )
 
