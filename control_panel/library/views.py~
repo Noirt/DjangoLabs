@@ -1,5 +1,4 @@
 # Create your views here.
-import os
 from library.models import Book
 from library.models import Author
 from library.models import Publisher
@@ -11,7 +10,6 @@ def booklist(request, sub):
 
 def bookinfo(request, sub):
 	book = Book.objects.get(id=sub)
-	aa = os.path.dirname(os.path.realpath(__file__))
 	d = {'book':book, 'authors': book.authors.all()}
 	return render(request, 'bookinfo.html', d)
 	

@@ -1,0 +1,47 @@
+body
+{
+	background: #fAfAfA;
+}
+
+p, h2
+{
+	font-size: 16px;
+}
+
+h1
+{
+	font-size: 20px;
+}
+
+h1, h2, p
+{
+	font-style: italic;
+	font-weight: normal;
+}
+
+span
+{
+	font-weight: bold;
+	color: red;	
+}
+
+ul
+{
+	list-style-image: url(/static/img/menu-arrow.png);
+	list-style-position: inside;
+}
+
+li
+{
+	font-size: 14px;
+	color: red;
+}
+
+.datafield
+{
+	display: block;
+        padding: 0px;
+	margin: 0px;
+	width: 300px;
+	float: left;
+}

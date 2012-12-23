@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Календарик</title>
+		    <link rel="stylesheet" href="/static/css/jquery-ui.css" />
+		    <script src="/static/js/jquery-1.8.3.js"></script>
+		    <script src="/static/js/jquery-ui.js"></script>
+		    <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="all"/>
+		    <script>
+		    $(function() {
+			$( "#datepicker" ).datepicker({ dateFormat: "yy-mm-dd" });
+		    });
+		    </script>
+	</head>
+	<body>
+	    <h1>Введите имя и дату.</h1>
+	    {% if errors %}
+	    <div>
+		    <h2>Исправьте следующие ошибки:</h2>
+	  	    <ul id="error_list">
+			{% for error in errors %}
+			<li>{{ error }}</li>
+			{% endfor %}
+		    </ul>
+            </div>
+	    {% endif %}
+	    <form action="/send/" method="post">{% csrf_token %}
+		<p class="datafield">Имя: <input type="text" name="name"></p>
+		<p class="datafield">Дата: <input type="text" name="date" id="datepicker"></p>
+		<input type="submit" value="Send">
+	    </form>
+	</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>		 <html class="no-js ie ie7 lte7 lte8 lte9" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>		 <html class="no-js ie ie8 lte8 lte9" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>		 <html class="no-js ie ie9 lte9>" lang="en-US"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="js multiplebgs boxshadow cssgradients wf-proximanova-n3-active wf-proximanova-n4-active wf-proximanova-i4-active wf-proximanova-n7-active wf-active" lang="en-US"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>Datepicker | jQuery UI</title>
+
+<meta name="author" content="The jQuery Project - jQuery.org">
+<meta name="description" content="jQuery: The Write Less, Do More, JavaScript Library">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<link rel="shortcut icon" href="http://jqueryui.com/web-base-template/themes/jqueryui.com/i/favicon.ico">
+<link rel="stylesheet" href="Datepicker%20%7C%20jQuery%20UI_files/base.css">
+<link rel="stylesheet" href="Datepicker%20%7C%20jQuery%20UI_files/style.css">
+<link rel="pingback" href="http://jqueryui.com/xmlrpc.php">
+
+<script src="Datepicker%20%7C%20jQuery%20UI_files/ga.js" async="" type="text/javascript"></script><script src="Datepicker%20%7C%20jQuery%20UI_files/modernizr.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="http://jqueryui.com/web-base-template/themes/jquery/js/selectivizr.js"></script>
+<![endif]-->
+
+<script src="Datepicker%20%7C%20jQuery%20UI_files/jquery.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="http://jqueryui.com/web-base-template/themes/jquery/js/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
+
+<script src="Datepicker%20%7C%20jQuery%20UI_files/plugins.js"></script>
+<script src="Datepicker%20%7C%20jQuery%20UI_files/scripts.js"></script>
+
+<!--Typekit-->
+<script type="text/javascript" src="Datepicker%20%7C%20jQuery%20UI_files/wde1aof.js"></script>
+<style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style><link href="Datepicker%20%7C%20jQuery%20UI_files/wde1aof-d.css" rel="stylesheet"><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<link rel="alternate" type="application/rss+xml" title="jQuery UI » Feed" href="http://jqueryui.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="jQuery UI » Comments Feed" href="http://jqueryui.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="jQuery UI » Datepicker Comments Feed" href="http://jqueryui.com/datepicker/feed/">
+<script type="text/javascript" src="Datepicker%20%7C%20jQuery%20UI_files/comment-reply.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://jqueryui.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://jqueryui.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Autocomplete" href="http://jqueryui.com/autocomplete/">
+<link rel="next" title="Dialog" href="http://jqueryui.com/dialog/">
+<meta name="generator" content="WordPress 3.5-RC1">
+<link rel="canonical" href="http://jqueryui.com/datepicker/">
+
+</head>
+<body class="jquery-ui page page-id-17 page-template-default page-slug-datepicker single-author singular">
+
+<!-- projects -->
+<div class="project-select">
+	<ul class="constrain">
+		<li>
+			<a href="http://jquery.com/" title="" class="" tabindex="-1">
+				<img src="Datepicker%20%7C%20jQuery%20UI_files/logo-top-jquery.png" alt="jQuery">
+				<em>The core JS framework that allows you to write less, do more.</em>
+			</a>
+		</li>
+		<li>
+			<a href="http://jqueryui.com/" title="" class="" tabindex="-1">
+				<img src="Datepicker%20%7C%20jQuery%20UI_files/logo-top-ui.png" alt="jQuery UI">
+				<em>The officially supported User Interface library for jQuery.</em>
+			</a>
+		</li>
+		<li>
+			<a href="http://jquerymobile.com/" title="" class="" tabindex="-1">
+				<img src="Datepicker%20%7C%20jQuery%20UI_files/logo-top-mobile.png" alt="jQuery Mobile">
+				<em>Build mobile web apps with jQuery using this framework.</em>
+			</a>
+		</li>
+		<li>
+			<a href="http://sizzlejs.com/" title="" class="" tabindex="-1">
+				<img src="Datepicker%20%7C%20jQuery%20UI_files/logo-top-sizzlejs.png" alt="SizzleJS">
+				<em>A smoking fast CSS selector engine for JavaScript.</em>
+			</a>
+		</li>
+		<li>
+			<a href="http://qunitjs.com/" title="" class="" tabindex="-1">
+				<img src="Datepicker%20%7C%20jQuery%20UI_files/logo-top-qunitjs.png" alt="QUnit">
+				<em>Write solid JavaScript apps by unit testing with QUnit.</em>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- /projects -->
+
+<!-- nav -->
+<header class="border clearfix">
+
+	<nav class="constrain clearfix top">
+		<ul class="projects">
+			<li class="jquery"><a href="http://jquery.com/" title="jQuery">jQuery</a></li>
+			<li class="jquery-ui"><a href="http://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
+			<li class="jquery-mobile"><a href="http://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
+			<li class="toggle-projects"><a href="http://jquery.org/projects/" title="All Projects">All Projects</a></li>
+		</ul>
+		<ul class="links">
+			<!-- put it back once the site is live
+			<li><a href="http://learn.jquery.com/">Learning</a></li>
+			-->
+			<!-- this used to link to http://jquery.org/support - doesn't yet exist -->
+			<li class="dropdown"><a href="#" title="Support">Support</a>
+				<ul>
+					<li><a href="http://forum.jquery.com/" title="Forum">Forum</a></li>
+					<li><a href="http://irc.jquery.com/" title="IRC/Chat">IRC/Chat</a></li>
+					<li><a href="http://stackoverflow.com/tags/jquery/info" title="Stack Overflow">Stack Overflow</a></li>
+					<!-- both 404
+					<li><a href="http://jquery.org/bugs" title="Report a Bug">Report a Bug</a></li>
+					<li><a href="http://jquery.org/support#enterprise-support" title="Enterprise Support">Enterprise Support</a></li>
+					-->
+				</ul>
+			</li>
+			<li class="dropdown"><a href="#" title="Community">Community</a>
+				<ul>
+					<li><a href="http://blog.jquery.com/" title="Blog">Blog</a></li>
+					<!-- lets put this back once there is actual new content
+					<li><a href="http://podcast.jquery.com/" title="Podcast">Podcast</a></li>
+					-->
+					<li><a href="http://forum.jquery.com/" title="Forums">Forums</a></li>
+					<li><a href="http://meetups.jquery.com/" title="Meetups">Meetups</a></li>
+					<li><a href="http://events.jquery.org/" title="Events">Events</a></li>
+				</ul>
+			</li>
+			<!-- was http://jquery.org/getting-involved/ -->
+			<li class="dropdown"><a href="#" title="Contribute">Contribute</a>
+				<ul>
+					<li><a href="http://jquery.org/donate/" title="Donate">Donate</a></li>
+					<li><a href="http://jquery.org/sponsor/" title="Sponsor">Sponsor</a></li>
+					<!-- all 404
+					<li><a href="http://jquery.org/getting-involved/#fix-bugs">Fix Bugs</a></li>
+					<li><a href="http://jquery.org/getting-involved/#answer-questions">Answer Questions</a></li>
+					<li><a href="http://jquery.org/getting-involved/#write-documentation">Write Documentation</a></li>
+					-->
+				</ul>
+			</li>
+			<li class="dropdown"><a href="http://jquery.org/about/" title="">About</a>
+				<ul class="last">
+					<li><a href="http://jquery.org/projects/" title="Projects">Projects</a></li>
+					<li><a href="http://jquery.org/team/" title="Team">Team</a></li>
+					<li><a href="http://jquery.org/history/" title="History">History</a></li>
+					<li><a href="http://jquery.org/sponsors/" title="Sponsors">Sponsors</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+</header>
+<!-- /nav -->
+
+<!-- container -->
+<div id="container" class="constrain">
+
+	<!-- header -->
+	<header class="clearfix">
+
+		<!-- logo -->
+		<h1 class="site-title"><a href="http://jqueryui.com/" title="jQuery UI">jQuery UI</a></h1>
+		<!-- /logo -->
+
+		<!-- ads or events -->
+		<aside></aside>
+		<!-- /ads or events -->
+
+
+
+		<!-- secondary nav -->
+		<nav class="clearfix">
+
+			<div class="menu-top-container">
+  <ul id="menu-top" class="menu">
+    <li class="menu-item"><a href="http://jqueryui.com/demos/">Demos</a></li>
+    <li class="menu-item"><a href="http://jqueryui.com/download">Download</a></li>
+    <li class="menu-item"><a href="http://api.jqueryui.com/">API Documentation</a></li>
+    <li class="menu-item"><a href="http://jqueryui.com/themeroller">Themes</a></li>
+    <li class="menu-item"><a href="http://jqueryui.com/development">Development</a></li>
+    <li class="menu-item"><a href="http://jqueryui.com/support">Support</a></li>
+    <li class="menu-item"><a href="http://blog.jqueryui.com/">Blog</a></li>
+    <li class="menu-item"><a href="http://jqueryui.com/about">About</a></li>
+  </ul>
+</div>
+
+			<form method="get" class="searchform" action="http://jqueryui.com/">
+	<button type="submit" class="icon-search"><span>go</span></button>
+
+	<label>
+		<span>Search jQuery UI</span>
+		<input name="s" placeholder="Search jQuery UI" type="text">
+	</label>
+</form>
+		</nav>
+		<!-- /secondary nav -->
+
+	</header>
+	<!-- /header -->
+
+<div id="body" class="sidebar-left clearfix">
+	<div class="inner" role="main">
+
+		
+		
+<article id="post-17" class="post-17 page type-page status-publish hentry category-widgets">
+			<header class="entry-header">
+			<h1 class="entry-title">Datepicker</h1>
+		</header><!-- .entry-header -->
+	
+	<div class="entry-content">
+		<div class="demo-list"><h2>Examples</h2><ul><li class="active"><a href="http://jqueryui.com/resources/demos/datepicker/default.html">Default functionality</a></li><li class=""><a href="http://jqueryui.com/resources/demos/datepicker/animation.html">Animations</a></li><li class=""><a href="http://jqueryui.com/resources/demos/datepicker/other-months.html">Dates in other months</a></li><li><a href="http://jqueryui.com/resources/demos/datepicker/buttonbar.html">Display button bar</a></li><li><a href="http://jqueryui.com/resources/demos/datepicker/inline.html">Display inline</a></li><li class=""><a href="http://jqueryui.com/resources/demos/datepicker/dropdown-month-year.html">Display month &amp; year menus</a></li><li><a href="http://jqueryui.com/resources/demos/datepicker/multiple-calendars.html">Display multiple months</a></li><li><a href="http://jqueryui.com/resources/demos/datepicker/date-formats.html">Format date</a></li><li><a href="http://jqueryui.com/resources/demos/datepicker/icon-trigger.html">Icon trigger</a></li><li><a href="http://jqueryui.com/resources/demos/datepicker/localization.html">Localize calendar</a></li><li><a href="http://jqueryui.com/resources/demos/datepicker/alt-field.html">Populate alternate field</a></li><li><a href="http://jqueryui.com/resources/demos/datepicker/min-max.html">Restrict date range</a></li><li><a href="http://jqueryui.com/resources/demos/datepicker/date-range.html">Select a Date Range</a></li><li><a href="http://jqueryui.com/resources/demos/datepicker/show-week.html">Show week of the year</a></li></ul></div><iframe src="Datepicker%20%7C%20jQuery%20UI_files/default.html" class="demo-frame"></iframe><div class="demo-description">
+<p>The datepicker is tied to a standard form input field.  Focus on the 
+input (click, or use the tab key) to open an interactive calendar in a 
+small overlay.  Choose a date, click elsewhere on the page (blur the 
+input), or hit the Esc key to close. If a date is chosen, feedback is 
+shown as the input's value.</p>
+</div><div class="view-source"><a tabindex="0"><i class="icon-eye-open"></i> view source</a><pre style="display: block;"><div class="syntaxhighlighter  "><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="plain">&lt;!doctype html&gt;</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="plain">&lt;</code><code class="keyword">html</code> <code class="color1">lang</code><code class="plain">=</code><code class="string">"en"</code><code class="plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="plain">&lt;</code><code class="keyword">head</code><code class="plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">meta</code> <code class="color1">charset</code><code class="plain">=</code><code class="string">"utf-8"</code> <code class="plain">/&gt;</code></div><div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">title</code><code class="plain">&gt;jQuery UI Datepicker - Default functionality&lt;/</code><code class="keyword">title</code><code class="plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">link</code> <code class="color1">rel</code><code class="plain">=</code><code class="string">"stylesheet"</code> <code class="color1">href</code><code class="plain">=</code><code class="string">"<a href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css</a>"</code> <code class="plain">/&gt;</code></div><div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">script</code> <code class="color1">src</code><code class="plain">=</code><code class="string">"<a href="http://code.jquery.com/jquery-1.8.3.js">http://code.jquery.com/jquery-1.8.3.js</a>"</code><code class="plain">&gt;&lt;/</code><code class="keyword">script</code><code class="plain">&gt;</code></div><div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">script</code> <code class="color1">src</code><code class="plain">=</code><code class="string">"<a href="http://code.jquery.com/ui/1.9.2/jquery-ui.js">http://code.jquery.com/ui/1.9.2/jquery-ui.js</a>"</code><code class="plain">&gt;&lt;/</code><code class="keyword">script</code><code class="plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">link</code> <code class="color1">rel</code><code class="plain">=</code><code class="string">"stylesheet"</code> <code class="color1">href</code><code class="plain">=</code><code class="string">"/resources/demos/style.css"</code> <code class="plain">/&gt;</code></div><div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;</code><code class="keyword">script</code><code class="plain">&gt;</code></div><div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">$(function() {</code></div><div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">$( "#datepicker" ).datepicker();</code></div><div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">});</code></div><div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;/</code><code class="keyword">script</code><code class="plain">&gt;</code></div><div class="line number16 index15 alt1"><code class="plain">&lt;/</code><code class="keyword">head</code><code class="plain">&gt;</code></div><div class="line number17 index16 alt2"><code class="plain">&lt;</code><code class="keyword">body</code><code class="plain">&gt;</code></div><div class="line number18 index17 alt1">&nbsp;</div><div class="line number19 index18 alt2"><code class="plain">&lt;</code><code class="keyword">p</code><code class="plain">&gt;Date: &lt;</code><code class="keyword">input</code> <code class="color1">type</code><code class="plain">=</code><code class="string">"text"</code> <code class="color1">id</code><code class="plain">=</code><code class="string">"datepicker"</code> <code class="plain">/&gt;&lt;/</code><code class="keyword">p</code><code class="plain">&gt;</code></div><div class="line number20 index19 alt1">&nbsp;</div><div class="line number21 index20 alt2">&nbsp;</div><div class="line number22 index21 alt1"><code class="plain">&lt;/</code><code class="keyword">body</code><code class="plain">&gt;</code></div><div class="line number23 index22 alt2"><code class="plain">&lt;/</code><code class="keyword">html</code><code class="plain">&gt;</code></div></div></td></tr></tbody></table></div></pre></div>
+
+<p>Want to learn more about the datepicker widget? Check out the
+<a href="http://api.jqueryui.com/datepicker/">API documentation</a>.</p>			</div><!-- .entry-content -->
+	<footer class="entry-meta">
+			</footer><!-- .entry-meta -->
+</article><!-- #post-17 -->
+
+			<div id="comments">
+	
+	
+	
+									
+</div><!-- #comments -->
+
+	</div>
+	<div id="sidebar" class="widget-area" role="complementary">
+	<aside class="widget">
+		<h3 class="widget-title">Interactions</h3>
+		<ul>
+			<li><a href="http://jqueryui.com/draggable/">Draggable</a></li><li><a href="http://jqueryui.com/droppable/">Droppable</a></li><li><a href="http://jqueryui.com/resizable/">Resizable</a></li><li><a href="http://jqueryui.com/selectable/">Selectable</a></li><li><a href="http://jqueryui.com/sortable/">Sortable</a></li>		</ul>
+	</aside>
+	<aside class="widget">
+		<h3 class="widget-title">Widgets</h3>
+		<ul>
+			<li><a href="http://jqueryui.com/accordion/">Accordion</a></li><li><a href="http://jqueryui.com/autocomplete/">Autocomplete</a></li><li><a href="http://jqueryui.com/button/">Button</a></li><li><a href="http://jqueryui.com/datepicker/">Datepicker</a></li><li><a href="http://jqueryui.com/dialog/">Dialog</a></li><li><a href="http://jqueryui.com/menu/">Menu</a></li><li><a href="http://jqueryui.com/progressbar/">Progressbar</a></li><li><a href="http://jqueryui.com/slider/">Slider</a></li><li><a href="http://jqueryui.com/spinner/">Spinner</a></li><li><a href="http://jqueryui.com/tabs/">Tabs</a></li><li><a href="http://jqueryui.com/tooltip/">Tooltip</a></li>		</ul>
+	</aside>
+	<aside class="widget">
+		<h3 class="widget-title">Effects</h3>
+		<ul>
+			<li><a href="http://jqueryui.com/addClass/">Add Class</a></li><li><a href="http://jqueryui.com/animate/">Color Animation</a></li><li><a href="http://jqueryui.com/effect/">Effect</a></li><li><a href="http://jqueryui.com/hide/">Hide</a></li><li><a href="http://jqueryui.com/removeClass/">Remove Class</a></li><li><a href="http://jqueryui.com/show/">Show</a></li><li><a href="http://jqueryui.com/switchClass/">Switch Class</a></li><li><a href="http://jqueryui.com/toggle/">Toggle</a></li><li><a href="http://jqueryui.com/toggleClass/">Toggle Class</a></li>		</ul>
+	</aside>
+	<aside class="widget">
+		<h3 class="widget-title">Utilities</h3>
+		<ul>
+			<li><a href="http://jqueryui.com/position/">Position</a></li><li><a href="http://jqueryui.com/widget/">Widget Factory</a></li>		</ul>
+	</aside>
+</div>
+</div>
+
+</div>
+<!-- /container -->
+
+<!-- footer -->
+<footer id="site-footer" class="clearfix">
+
+  <div class="constrain">
+
+  	
+    <div class="col3-2 col">
+      <h3><span>Quick Access</span></h3>
+      <div class="cdn">
+        <strong>CDN <em>CSS</em></strong>
+        <input value="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+      </div>
+      <div class="cdn">
+        <strong>CDN <em>JS</em></strong>
+        <input value="http://code.jquery.com/jquery-1.8.3.js">
+      </div>
+      <div class="cdn">
+        <strong>CDN <em>JS</em></strong>
+        <input value="http://code.jquery.com/ui/1.9.2/jquery-ui.js">
+      </div>
+      <div class="download">
+        <div><strong>Download jQuery UI 1.9.2 (for jQuery 1.6+):</strong></div>
+        <span><a href="https://github.com/downloads/jquery/jquery-ui/jquery-ui-1.9.2.zip">Development Bundle</a>
+        <a href="https://github.com/downloads/jquery/jquery-ui/jquery-ui-themes-1.9.2.zip">Themes</a>
+        <a href="http://jqueryui.com/download/">Download Builder →</a></span>
+      </div>
+      <ul class="footer-icon-links">
+        <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery-ui">GitHub <small>jQuery UI <br>Source</small><span></span></a></li>
+        <li class="footer-icon icon-forum"><a href="http://forum.jquery.com/using-jquery-ui">Forum <small>Community <br>Support</small><span></span></a></li>
+        <li class="footer-icon icon-bugs"><a href="http://bugs.jqueryui.com/">Bugs <small>Issue <br>Tracker</small><span></span></a></li>
+      </ul>
+    </div>
+
+    <div class="col3-1 col">
+      <h3><span>Books</span></h3>
+      <ul class="books">
+        <li>
+          <a href="http://link.packtpub.com/SHnqUf">
+            <span style="background-image: url(&quot;http://jqueryui.com/web-base-template/themes/jquery/content/books/jquery-ui-1.8.jpg&quot;);" class="bottom"><img style="visibility: hidden;" src="Datepicker%20%7C%20jQuery%20UI_files/jquery-ui-1.jpg" alt="jQuery UI 1.8: The User Interface Library for jQuery by Dan Wellman" height="114" width="92"></span>
+            <strong>jQuery UI 1.8: The User Interface Library for jQuery</strong><br>
+            <cite>Dan Wellman</cite>
+          </a>
+        </li>
+        <li>
+          <a href="http://link.packtpub.com/PG9pAC">
+            <span style="background-image: url(&quot;http://jqueryui.com/web-base-template/themes/jquery/content/books/jquery-ui-themes.jpg&quot;);"><img style="visibility: hidden;" src="Datepicker%20%7C%20jQuery%20UI_files/jquery-ui-themes.jpg" alt="jQuery UI Themes by Adam Boduch" height="114" width="92"></span>
+            <strong>jQuery UI Themes</strong><br>
+            <cite>Adam Boduch</cite>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="legal">
+      <ul class="footer-site-links">
+        <li class="icon-learning-center icon"><a href="http://learn.jquery.com/">Learning Center</a></li>
+        <li class="icon-forum icon"><a href="http://forum.jquery.com/using-jquery-ui">Forum</a></li>
+        <li class="icon-api icon"><a href="http://api.jqueryui.com/">API</a></li>
+        <li class="icon-twitter icon"><a href="http://twitter.com/jqueryui">Twitter</a></li>
+        <li class="icon-irc icon"><a href="http://irc.jquery.com/">IRC</a></li>
+      </ul>
+        <p class="copyright">Copyright 2012 <a href="http://jquery.org/team/">The jQuery Foundation</a>.<br><span class="sponsor-line"><a href="http://mediatemple.net/" rel="noindex,nofollow" class="mt-link">Web hosting by Media Temple</a> | <a href="http://jquery.org/sponsors/">View sponsors</a></span></p>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1076265-1']);
+    _gaq.push(['_setDomainName', 'jqueryui.com']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+</body></html>
